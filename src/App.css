@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {margin:0;padding:0;box-sizing: border-box;}
+body, button, input, select, table, textarea {box-sizing: border-box;font-size:12px;line-height:16px;color:#202020;font-family:-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif}
+h1, h2, h3, h4, h5, h6 {box-sizing: border-box;font-size:inherit;line-height:inherit}
+textarea {-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:transparent;border:0;word-break:keep-all;word-wrap:break-word}
+button, input {-webkit-border-radius:0;border-radius:0;border:0;box-sizing: border-box;}
+button {background-color:transparent}
+fieldset, img {border:0}
+img {vertical-align:top}
+ol, ul {list-style:none;box-sizing: border-box;}
+address, em {font-style:normal}
+a {color:inherit;text-decoration:none;box-sizing: border-box;}
+a:hover {text-decoration:underline}
+iframe {overflow:hidden;margin:0;border:0;padding:0;vertical-align:top}
+mark {background-color:transparent}
+i {font-style:normal;box-sizing: border-box;}
+
+body {
+  background-color:#2b2b54;
+  margin:0; padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-list-wrap {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:90%;
+  max-height:90vh;
+  min-height:13rem;
+  border-radius:1rem;
+  overflow:hidden;
+  margin:0 auto;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Nav {
+  box-sizing: border-box;
+  display:flex;
+  padding:0 1.6rem;
+  justify-content:flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:100%;
+  height:5rem;
+  background-color:#8a799f;
 }
 
-.App-link {
-  color: #61dafb;
+
+.Nav .darkmode {
+  width:2rem;
+  margin-right:0.6rem;
+}
+.Nav h1 {
+  font-size:1.3rem;
+}
+.Nav .btns {
+  margin-left:auto;
+  width:40%;
+}
+.Nav .btns ul{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.Nav .btns ul li{
+  padding:1rem 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+article {
+  box-sizing: border-box;
+  width:100%;
+  height:100%;
+  background-color:#d2cadc;
+  padding:2rem;
+}
+
+.todo-list {
+  height:80%;
+  overflow-y: scroll;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom:1rem;
+}
+
+.todo-list li input {
+  margin-right:1rem;
+  width:6rem;
+  height:1.3rem;
+  line-height:1.6rem;
+}
+.todo-list li label {
+  width:70rem;
+  font-size:1.2rem;
+  line-height:1.6rem;
+  margin-right:1rem;
+  word-break: break-all;
+}
+
+.todo-list li button {
+  width:7rem;
+  margin-left:auto;
+  line-height:1.6rem;
+}
+
+
+
+.input-form {
+  box-sizing: border-box;
+  width:100%;
+  height:5rem;
+  background-color:#8a799f;
+  padding:1rem;
+}
+
+.input-form .inner-wrap {
+  width:100%;
+  height:100%;
+  background-color: #d3cadc;
+  border-radius:0.6rem;
+  overflow: hidden;
+}
+
+.input-form input {
+  width:80%;
+  height:100%;
+  padding:0 1.2rem;
+  font-size:1.15rem;
+  background-color:transparent;
+  color:#444;
+}
+
+.input-form button {
+  width:20%;
+  display:inline-block;
+  height:100%;
+  font-size:1.1rem;
+  background-color:#5b4c6e;
+  color:#fff;
 }
