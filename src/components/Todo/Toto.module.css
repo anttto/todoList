@@ -19,11 +19,14 @@
 }
 
 .icon {
-    width:26px;
-    height:26px;
+    width:2.4rem;
+    height:2.4rem;
     background-color: var(--color-grey);
     border-radius: 100%;
     transition: all 150ms ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .icon:hover {
     background-color: var(--color-accent);
@@ -32,4 +35,7 @@
 .button {
     color:var(--color-text);
     background-color: transparent;
+}
+.button svg {
+    width:1.4rem; height:1.4rem;
 }
