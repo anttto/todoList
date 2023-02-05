@@ -1,6 +1,6 @@
 import React from 'react';
 import { BiTrash } from 'react-icons/bi';
-import styles from './Toto.module.css';
+import styles from './Todo.module.css';
 
 
 export default function Todo({list, Check, Delete}) {
@@ -24,7 +24,7 @@ export default function Todo({list, Check, Delete}) {
             <label htmlFor={list.id} className={styles.text}>{list.text}</label>
             <span className={styles.icon}>
             <button className={styles.button} onClick={handleDelete}>
-                <BiTrash />
+                <BiTrash size="20" />
             </button>
             </span>
         </li>

@@ -7,6 +7,10 @@
     padding:0 1rem;
 }
 
+.header.dark {
+
+}
+
 .filters {
     display: flex;
 }
@@ -32,4 +36,8 @@
     display:block;
     margin-top:0.2rem;
     border:1px solid var(--color-text);
+}
+
+.themeBtn {
+    cursor: pointer;
 }
