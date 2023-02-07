@@ -7,10 +7,6 @@
     padding:0 1rem;
 }
 
-.header.dark {
-
-}
-
 .filters {
     display: flex;
 }
@@ -39,5 +35,17 @@
 }
 
 .themeBtn {
+    font-size:1.5rem;
+    color:#000;
     cursor: pointer;
+    background: transparent;   
+    transition :all 150ms;
+}
+.dark .themeBtn {
+    color:#fff;
+}
+
+.themeBtn:hover {
+    transform:scale(1.1);
+    color:var(--color-accent);
 }
