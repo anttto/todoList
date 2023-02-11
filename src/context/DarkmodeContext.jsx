@@ -10,13 +10,10 @@ export function DarkModeProvider ({children}) {
     }
 
     useEffect(()=>{
-        const isDark = localStorage.theme === 'dark' || 
-        (!('theme' in localStorage) && 
-        window.matchMedia('(prefers-color-scheme: dark)').matches);
-        console.log(isDark);
+        const isDark = localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
         setDarkMode(isDark);
         updateDarkMode(isDark);
-    }, [])
+    }, []);
 
     return(
         <DarkModeContext.Provider value={{darkMode, toggleDarkMode}}>

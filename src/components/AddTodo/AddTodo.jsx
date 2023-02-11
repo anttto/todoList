@@ -12,10 +12,11 @@ export default function AddTodo({onAdd}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(text.trim().length !== 0) {
-            onAdd({id:uuidv4(), text, status:'active'});
+        if(text.trim().length === 0) {
+            return;
         }
-        return setText('');
+        onAdd({id:uuidv4(), text, status:'active'});
+        setText('');
     }
     
     return <form className={styles.form} onSubmit={handleSubmit}>
