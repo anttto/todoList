@@ -1,5 +1,5 @@
 :root {
-  --color-bg-dark:#f5f5f5;
+  --color-bg-dark: #f5f5f5;
   --color-bg: #fdfffd;
   --color-grey: #d1d1d1;
   --color-text: #22243b;
@@ -9,46 +9,47 @@
 }
 
 html.dark {
-  --color-bg-dark:#1a1c35;
-  --color-bg:#22243b;
-  --color-grey:#424242;
-  --color-text:#fdfffd;
+  --color-bg-dark: #1a1c35;
+  --color-bg: #22243b;
+  --color-grey: #424242;
+  --color-text: #fdfffd;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width:100vw;
-  height:100vh;
-  display:flex;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-size:1.2rem;
+  font-size: 1.2rem;
   accent-color: var(--color-accent);
-  background: rgb(104,4,217);
-  background: linear-gradient(322deg, rgba(104,4,217,1) 0%, rgba(38,180,228,1) 100%);
+  background: transparent;
+  /* background: rgb(104,4,217); */
+  /* background: linear-gradient(322deg, rgba(104,4,217,1) 0%, rgba(38,180,228,1) 100%); */
 }
 
 #root {
-  width:90%;
-  height:80%; 
-  max-width:500px;
+  width: 90%;
+  height: 80%;
+  max-width: 500px;
   background-color: var(--color-bg-dark);
   border-radius: 1rem;
   overflow: hidden;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.41);
-  -webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.41);
-  -moz-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.41);
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.41);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 * {
@@ -56,17 +57,17 @@ code {
 }
 
 ul {
-  list-style:none;
-  padding-left:0;
+  list-style: none;
+  padding-left: 0;
 }
 
 button {
-  outline:none;
-  border:none;
+  outline: none;
+  border: none;
 }
 
 ::-webkit-scrollbar {
-  width:0.5rem;
+  width: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -75,7 +76,7 @@ button {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-scrollbar);
-  border-radius:100rem;
+  border-radius: 100rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
