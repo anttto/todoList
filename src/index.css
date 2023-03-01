@@ -29,9 +29,12 @@ body {
   align-items: center;
   font-size: 1.2rem;
   accent-color: var(--color-accent);
-  background: transparent;
-  /* background: rgb(104,4,217); */
-  /* background: linear-gradient(322deg, rgba(104,4,217,1) 0%, rgba(38,180,228,1) 100%); */
+  background: rgb(104, 4, 217);
+  background: linear-gradient(
+    322deg,
+    rgba(104, 4, 217, 1) 0%,
+    rgba(38, 180, 228, 1) 100%
+  );
 }
 
 #root {
